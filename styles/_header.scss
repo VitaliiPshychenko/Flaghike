@@ -57,6 +57,10 @@
   width: 70px;
 }
 
+.arrow-outer:hover .arrow {
+  transform: translateY(5px);
+}
+
 .arrrow-inner {
   flex-direction: column;
   height: 50px;
@@ -68,6 +72,7 @@
   display: inline-block;
   height: 9px;
   width: 15px;
+  transition: 0.7s ease-in-out;
 }
 
 @media (max-width: 1279px) {
