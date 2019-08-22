@@ -57,9 +57,9 @@
   width: 70px;
 }
 
-.arrow-outer:hover .arrow {
+/* .arrow-outer:hover .arrow {
   transform: translateY(5px);
-}
+} */
 
 .arrrow-inner {
   flex-direction: column;
@@ -72,7 +72,19 @@
   display: inline-block;
   height: 9px;
   width: 15px;
-  transition: 0.7s ease-in-out;
+  animation: arrows 2s infinite;
+}
+
+@keyframes arrows {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 1279px) {
