@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+p,
+ul {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Greycliff';
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1110px;
+  width: 100%;
+}
+
+@import 'fonts';
+@import 'header';
+@import 'main';
+@import 'footer';
+
+@media (max-width: 1279px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    width: 95%;
+  }
+}

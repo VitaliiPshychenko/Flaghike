@@ -1,0 +1,99 @@
+.intro {
+  background: url('../images/bg-header-desktop.jpg') center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.intro-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.logo {
+  padding-top: 50px;
+}
+
+.intro-title {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 300;
+  max-width: 920px;
+  text-align: center;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.intro-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 920px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 0 auto;
+  left: 50%;
+  z-index: 0;
+}
+
+.arrow-outer,
+.arrrow-inner {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-outer {
+  cursor: pointer;
+  height: 70px;
+  position: relative;
+  width: 70px;
+}
+
+.arrrow-inner {
+  flex-direction: column;
+  height: 50px;
+  width: 50px;
+}
+
+.arrow {
+  background: url('../images/arrow.png') center no-repeat;
+  display: inline-block;
+  height: 9px;
+  width: 15px;
+}
+
+@media (max-width: 1279px) {
+  .intro-content {
+    width: 90%;
+  }
+
+  .intro-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro {
+    background: url('../images/bg-header-mobile.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+  }
+
+  .intro-title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
